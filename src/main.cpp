@@ -20,7 +20,7 @@ void PressAnyKeyToContinue() {
 //Prompts user whether they're ready for the challenge
 void EntryPrompt() {
     char UserSelection {};
-    std::cout << "You've stubled upon an old box that's been locked for ages.";
+    std::cout << "You've stumbled upon an old box that's been locked for ages.";
     PressAnyKeyToContinue();
     std::cout << "\nYou need to enter correct codes to Continue.";
     PressAnyKeyToContinue();

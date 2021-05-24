@@ -25,7 +25,7 @@ rand() % DifficultyLevel + DifficultyLevel;
 
 * Screenshots:
 
+Title                                                                                            |  Level Failed
+:------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------:
+![Title](https://raw.githubusercontent.com/keiclicks/TripleX/main/preview/Level1.png "Level-1")  |  ![LevelFailed](https://raw.githubusercontent.com/keiclicks/TripleX/main/preview/LevelFailed.png "Level-Failed")
 
-![Title](https://raw.githubusercontent.com/keiclicks/TripleX/main/preview/Level1.png "Level-1")
-
-![LevelFailed](https://raw.githubusercontent.com/keiclicks/TripleX/main/preview/LevelFailed.png "Level-Failed")

@@ -71,7 +71,7 @@ void LoopGameAtDifficulty(int *DifficultyPointer, int *AttemptPointer) {
     else if ((*AttemptPointer) > 1) {
         (*AttemptPointer)--;
         std::cout <<"\nOops! Your codes are incorrect!\n";
-        std::cout <<"Difficulty has been reset.\n\nAttempt remaining : " << (*AttemptPointer) << std::endl;
+        std::cout <<"\nAttempt remaining : " << (*AttemptPointer) << std::endl;
         PressAnyKeyToContinue();
     }
     else {

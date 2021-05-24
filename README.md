@@ -3,7 +3,7 @@
 
 ### Game Story :
 
-> You've stubled upon an old box that's been locked for ages.
+> You've stumbled upon an old box that's been locked for ages.
 
 > You need to enter 3 correct codes to Continue.
 

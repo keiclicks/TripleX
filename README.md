@@ -17,8 +17,15 @@
 | Maximum Difficulty   | 5      |
 | Total Attempts       | 3      |
 
-Random Numbers are generated using : 
+* Random Numbers are generated using : 
 ```CPP
 srand(time(NULL));
 rand() % DifficultyLevel + DifficultyLevel;
 ```
+
+* Screenshots:
+
+
+![Title](https://raw.githubusercontent.com/keiclicks/TripleX/main/preview/Level1.png "Level-1")
+
+![LevelFailed](https://raw.githubusercontent.com/keiclicks/TripleX/main/preview/LevelFailed.png "Level-Failed")

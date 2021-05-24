@@ -1,7 +1,7 @@
 # TripleX
 ## A Simple C++ game (to be played on console).
 
-###Game Story :
+### Game Story :
 
 > You've stubled upon an old box that's been locked for ages.
 
@@ -9,7 +9,7 @@
 
 > You will receive everything that's inside the box!
 
-####Variables:
+#### Variables:
 
 | Game Variable        | Values |
 | -------------------- |:------:|
@@ -20,6 +20,5 @@
 Random Numbers are generated using : 
 ```CPP
 srand(time(NULL));
-
 rand() % DifficultyLevel + DifficultyLevel;
 ```

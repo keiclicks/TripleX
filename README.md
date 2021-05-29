@@ -1,15 +1,14 @@
 # TripleX
+
 ## A Simple C++ game (to be played on console).
 
-### Game Story :
+### Game Story
 
 > You've stumbled upon an old box that's been locked for ages.
-
 > You need to enter 3 correct codes to Continue.
-
 > You will receive everything that's inside the box!
 
-#### Variables:
+#### Variables
 
 | Game Variable        | Values |
 | -------------------- |:------:|
@@ -18,6 +17,7 @@
 | Total Attempts       | 3      |
 
 * Random Numbers are generated using :
+  
 ```CPP
 srand(time(NULL));
 rand() % DifficultyLevel + DifficultyLevel;

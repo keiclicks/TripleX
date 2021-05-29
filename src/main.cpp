@@ -8,7 +8,7 @@
 #include <ctime>
 #include <string>
 
-//Sets the default difficulty
+// Sets the default difficulty
 void SetDefaultDifficulty (int &DifficultyReference) {
     DifficultyReference = 1;
 }
@@ -17,7 +17,7 @@ void PressAnyKeyToContinue() {
     std::cin.ignore(1000000000, '\n');
 }
 
-//Prompts user whether they're ready for the challenge
+// Prompts user whether they're ready for the challenge
 void EntryPrompt() {
     char UserSelection {};
     std::cout << "You've stumbled upon an old box that's been locked for ages.";
@@ -46,25 +46,25 @@ void gameInstruction(const int *codeSumPtr, const int *codeProductPtr) {
     std::cout << "\nEnter your codes: ";
 }
 
-//Main game code goes here
+// Main game code goes here
 void LoopGameAtDifficulty(int &DifficultyReference, int &AttemptReference) {
     const int CodeA = rand() % DifficultyReference + DifficultyReference;
     const int CodeB = rand() % DifficultyReference + DifficultyReference;
     const int CodeC = rand() % DifficultyReference + DifficultyReference;
-//    std::cout << CodeA << " " << CodeB << " " <<CodeC;
+    // std::cout << CodeA << " " << CodeB << " " <<CodeC;
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
 
     gameInstruction(&CodeSum, &CodeProduct);
     
-    //Player guess input
+    // Player guess input
     int GuessA, GuessB, GuessC {};
     std::cin >> GuessA >> GuessB >> GuessC;
     int GuessSum {GuessA + GuessB + GuessC};
     int GuessProduct {GuessA * GuessB * GuessC};
 
-    //Answer validation
+    // Answer validation
     if (GuessSum == CodeSum && GuessProduct == CodeProduct) {
         DifficultyReference++;
         std::cout << "\nYour Codes are correct!!\n";
@@ -101,8 +101,8 @@ int main() {
     PressAnyKeyToContinue();
     while (DifficultyLevel <= MaxDifficulty && TotalAttempts >= 1) {
         LoopGameAtDifficulty(DifficultyLevel,TotalAttempts);
-        std::cin.clear();  //clears the failbit
-        std::cin.ignore(); //discarding the buffer
+        std::cin.clear();  // clears the failbit
+        std::cin.ignore(); // discarding the buffer
     }
 
     std::cout << "\n\nCongratulations! You open the box and find....\n";

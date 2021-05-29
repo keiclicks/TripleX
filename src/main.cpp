@@ -1,7 +1,7 @@
 /*
-    Starting difficulty level : 1
-    Max difficulty level : 5
-    Total attempts before self destruct : 3
+    * Starting difficulty level : 1
+    * Max difficulty level : 5
+    * Total attempts before self destruct : 3
 */
 
 #include <iostream>
@@ -28,6 +28,7 @@ void EntryPrompt() {
     PressAnyKeyToContinue();
     std::cout << "\nAre you ready for the challenge? (Y/N) : ";
     std::cin >> UserSelection;
+
     if (UserSelection != 'n' && UserSelection != 'N') {
         std::cout << "\nGoodluck!\n" << std::endl;
         PressAnyKeyToContinue();
@@ -36,6 +37,13 @@ void EntryPrompt() {
         std::cout << "\nGoodbye.\n" << std::endl;
         exit(0);
     }
+}
+
+void gameInstruction(const int *codeSumPtr, const int *codeProductPtr) {
+    std::cout << "\n>> There are 3 numbers in the code.\n";
+    std::cout << ">> The codes add-up to: " << *codeSumPtr << std::endl;
+    std::cout << ">> The codes multiply to give: " << *codeProductPtr << std::endl;
+    std::cout << "\nEnter your codes: ";
 }
 
 //Main game code goes here
@@ -48,11 +56,8 @@ void LoopGameAtDifficulty(int &DifficultyReference, int &AttemptReference) {
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
 
-    std::cout << "\n>> There are 3 numbers in the code.\n";
-    std::cout << ">> The codes add-up to: " << CodeSum << std::endl;
-    std::cout << ">> The codes multiply to give: " << CodeProduct << std::endl;
-    std::cout << "\nEnter your codes: ";
-
+    gameInstruction(&CodeSum, &CodeProduct);
+    
     //Player guess input
     int GuessA, GuessB, GuessC {};
     std::cin >> GuessA >> GuessB >> GuessC;

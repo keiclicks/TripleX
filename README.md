@@ -1,6 +1,6 @@
 # TripleX
 
-## A Simple C++ game (to be played on console).
+## A Simple C++ game (to be played on console)
 
 ### Game Story
 
@@ -17,7 +17,7 @@
 | Total Attempts       | 3      |
 
 * Random Numbers are generated using :
-  
+
 ```CPP
 srand(time(NULL));
 rand() % DifficultyLevel + DifficultyLevel;

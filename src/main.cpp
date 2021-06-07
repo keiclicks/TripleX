@@ -57,7 +57,7 @@ void LoopGameAtDifficulty(int &DifficultyReference, int &AttemptReference) {
     const int CodeProduct = CodeA * CodeB * CodeC;
 
     gameInstruction(&CodeSum, &CodeProduct);
-    
+
     // Player guess input
     int GuessA, GuessB, GuessC {};
     std:: cin >> GuessA >> GuessB >> GuessC;

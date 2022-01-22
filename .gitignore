@@ -1,2 +1,6 @@
 src/a.out
 .vscode/settings.json
+.vscode
+src/main.dSYM
+src/main
+.DS_Store
